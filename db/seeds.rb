@@ -14,6 +14,13 @@ Review.destroy_all
   Product.create!(name: Faker::Books::Lovecraft.tome, #=> "Book of Eibon
     country_of_origin: "United Kingdom",
     cost: rand(15))
-  end
+    250.times do |index|
+      product.reviews.create!(
+        author: Faker::Superhero.name,
+        rating: random.number(5) ,
+        content_body: Faker::Superhero.descriptor
+      )
+      end
+    end
 
-  p "Created #{Product.count} products"
+    p "Created #{Product.count} products"
