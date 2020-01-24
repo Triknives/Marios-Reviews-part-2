@@ -4,7 +4,7 @@ class Product < ApplicationRecord
   validates :country_of_origin, presence: true
   validates :cost, presence: true
 
-  scope :search, -> (country_of_origin) {where("country like ?", "%#{country_of_origin}%")}
+  scope :country_of_origin, -> { where(country_of_origin: "US") }
 
   scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
 

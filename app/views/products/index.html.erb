@@ -1,15 +1,5 @@
 <h1>Products</h1>
 
-<h1>Most recently created products</h1>
-<% @products.three_most_recent.each do |product| %>
-<ul>
-  <li>
-    <%= link_to product.name, product.id, product_review_path(@product, review) %>
-  </li>
-</ul>
-<% end %>
-
-
 <% if @products.any? %>
 <ul>
   <% @products.each do |product| %>
