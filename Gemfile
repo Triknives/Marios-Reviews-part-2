@@ -47,6 +47,8 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'faker'
   gem 'devise'
+  gem 'simplecov', require: false
+  gem 'capybara'
 end
 
 group :development do
