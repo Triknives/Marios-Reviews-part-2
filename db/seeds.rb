@@ -11,15 +11,14 @@ Review.destroy_all
 
 
 50.times do |index|
-  Product.create!(name: Faker::Books::Lovecraft.tome, #=> "Book of Eibon
+   product = Product.create!(name: Faker::Books::Lovecraft.tome, #=> "Book of Eibon
     country_of_origin: "United Kingdom",
     cost: rand(15))
     250.times do |index|
       product.reviews.create!(
-        author: Faker::Superhero.name,
-        rating: random.number(5) ,
-        content_body: Faker::Superhero.descriptor
-      )
+        author: Faker::JapaneseMedia::DragonBall.character ,
+        rating: rand(5),
+        content_body: "If there's one thing the history of evolution has taught us, it's that life will not be contained. Life breaks free, it expands to new territories, and crashes through barriers painfully, maybe even dangerously, but, uh, well, there it is.")
       end
     end
 
