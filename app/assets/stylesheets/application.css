@@ -51,6 +51,9 @@ a {
   color: white;
   font-weight: 700;
 }
+#login_page{
+ float:left;
+}
 
 label {
     color:white;

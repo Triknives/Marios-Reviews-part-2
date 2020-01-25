@@ -6,10 +6,9 @@
 
 ## Description
 
-_This application will allow Mario to track and record product reviews provided by customers. This application will further allow Mario to provide brief details regarding the product such as Country of Origin, Cost, Name of product and allow for a text based review and numeric review on a scale of 1 - 5._
+_This application will allow Mario to track and record product reviews provided by customers. This application will further allow Mario to provide brief details regarding the product such as Country of Origin, Cost, Name of product and allow for a text based review and numeric review on a scale of 0 - 5._
 
 ## Setup/Installation Requirements
-
 
 * _Set-up your own repositories, and branches to edit and add as needed._
 * _Ruby 2.5.1 will be needed_
@@ -17,6 +16,27 @@ _This application will allow Mario to track and record product reviews provided 
 * _Have rails installed on your machine, rails 5.1 was used here._
 * _GEMS: "Rspec" and "Pry" along with "Sinatra" will need to be installed._
 * _run "Gem Install bundle" to download needed Gems recommended._
+
+## User and Admin Permissions:
+_Below each of the user types permissions will be described._
+
+_Admin:_
+* _As an admin, You should be able to log in and log out of the application._
+* _As an admin, You should be able to add, update and delete products._
+* _As an admin, You should be able to add reviews._
+
+_Standard User:_
+* _As a user, They will be able to create an account and add a product_
+* _As a user, They will be able to create review for a product._
+
+## Admin Account Creation:
+_While there are quite a few ways to set up an admin account, here we are using using a method in which they are added via console to better allow Devise to take care of the heavy lifting, while further offering an additional barrier to slow down them bad guys! Below are some basic instructions to create your initial user account as an admin (ideally YOU or someone you intended!)_
+
+_In terminal enter:_
+* _add_column :users, :admin, :boolean, default: false (this will create a column to allow for a boolean check)_
+* _@user.first  (this will let us know if step one went according to plan, admin should = false)_
+* _@user.admin = true (entering this will set the admin boolean to true)_
+* _@user.save_
 
 
 ## Known Bugs
@@ -29,12 +49,14 @@ _If you have any concerns, comments or even suggestions on how to better organiz
 
 ## Technologies Used
 
-* _Ruby 2.5.1_
+* _Ruby 2.6.5_
 * _Rspec_
 * _Pry_
 * _pSql_
-* _Rails_
+* _Rails 5.2.4.1'_
 * _Faker_
+* _Devise_
+* _Simplecov_
 
 ### License
 

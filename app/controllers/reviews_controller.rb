@@ -21,7 +21,7 @@ class ReviewsController < ApplicationController
     @review = Review.find(params[:id])
     render :show
   end
-  
+
   def edit
     @product = Product.find(params[:product_id])
     @review = Review.find(params[:id])
@@ -40,6 +40,7 @@ class ReviewsController < ApplicationController
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
+    flash[:notice] = "Go get'em Admin!"
     redirect_to product_path(@review.product)
   end
   # DO NOT HAVE PRIVATE ABOVE THIS COMMENT
