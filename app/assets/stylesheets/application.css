@@ -14,10 +14,11 @@
 *= require_self
 */
 body {
-  background-image: url("https://marketingland.com/wp-content/ml-loads/2014/09/reviews-ratings-stars-ss-1920.jpg");
+  background-image: url("https://files02.tchspt.com/articles/wallpapers3/fans/techspot-wallpaper-0.png");
   background-size: cover;
+  background-size: stretch;
   background-repeat: no-repeat;
-  margin-left:100px; 
+  margin-left:100px;
 }
 
 ul {
@@ -40,13 +41,7 @@ a {
   color: white;
   font-weight: 700;
 }
-input, select, textarea{
-  color: #ff0000;
-}
 
-textarea:focus, input:focus {
-  color: #ff0000;
-}
 label {
     color:white;
     font-weight:700;
