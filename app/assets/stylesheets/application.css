@@ -25,9 +25,10 @@ ul {
   /* position: fixed; */
   margin-right: 200px;
   font-weight: 700;
+  list-style-type: none;
 }
 
-h1 {
+h1, h2, p{
   color: yellow;
   font-weight: 700;
 }
@@ -38,6 +39,15 @@ a {
 }
 
 #form_text{
+  color: white;
+  font-weight: 700;
+}
+#product_info{
+  color: white;
+  font-weight: 700;
+}
+
+#review_info{
   color: white;
   font-weight: 700;
 }

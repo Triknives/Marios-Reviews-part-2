@@ -1,7 +1,7 @@
-<h2>Review: <%= @review.author %></h2>
-<h3>Product: <%= @product.name %></h3>
-<h3><%= @review.rating %> out of 5</h3>
-<h4><%= @review.content_body %></h4>
+<h2 id ="review_info">Review: <%= @review.author %></h2>
+<h3 id ="review_info">Product: <%= @product.name %></h3>
+<h3 id ="review_info"><%= @review.rating %> out of 5</h3>
+<h4 id ="review_info"><%= @review.content_body %></h4>
 
 <% if current_user.admin && current_user%>
 <p><%= link_to "Edit review", edit_product_review_path(@product, @review) %></p>
