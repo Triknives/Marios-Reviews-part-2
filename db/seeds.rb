@@ -10,11 +10,11 @@ Review.destroy_all
 
 
 
-50.times do |index|
+15.times do |index|
    product = Product.create!(name: Faker::Books::Lovecraft.tome, #=> "Book of Eibon
     country_of_origin: "United Kingdom",
     cost: rand(15))
-    250.times do |index|
+    10.times do |index|
       product.reviews.create!(
         author: Faker::JapaneseMedia::DragonBall.character ,
         rating: rand(5),
