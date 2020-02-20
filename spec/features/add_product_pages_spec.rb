@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'faker'
 
 describe('create an Product path', {:type => :feature}) do
   before(:each) do
