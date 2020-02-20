@@ -12,7 +12,7 @@
 
 <body>
   <% if current_user %>
-
+  <h1 class='page-title'> Marios Book Reviews</h1>
   <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
   <% end %>
   <p class="notice"><%= notice %></p>

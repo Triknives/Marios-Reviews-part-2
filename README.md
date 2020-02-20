@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application will allow Mario to track and record product reviews provided by customers. This application will further allow Mario to provide brief details regarding the product such as Country of Origin, Cost, Name of product and allow for a text based review and numeric review on a scale of 0 - 5._
+_This application will allow Mario to track and record product reviews provided by customers. This application will further allow Mario to provide brief details regarding the product such as Country of Origin, Cost, Name of product and allow for a text based review and numeric review on a scale of 0 - 5. For this particular mock up, the site has been seeded via "faker" to allow for random book titles and authors to be generated to allow for testing of CRUD functionality and persistent data to the database through MySql. Reviews are a lovely quote by Ian Malcom, a character from Jurassic Park! Ratings and cost have also been randomly generated. New users can create an account, add a product of their choosing and leave a review for it. The current snapshot of the application is being hosted through Heroku._
 
 ## Setup/Installation Requirements
 
