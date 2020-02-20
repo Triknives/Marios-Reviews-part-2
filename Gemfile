@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'jquery-rails'
+gem 'faker'
 
 
 group :development, :test do
@@ -46,7 +47,6 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
-  gem 'faker'
   gem 'simplecov', require: false
   gem 'capybara'
 end
