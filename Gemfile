@@ -40,15 +40,15 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'jquery-rails'
 
 
-gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-gem 'rspec-rails'
-gem 'launchy'
-gem 'pry'
-gem 'shoulda-matchers'
-gem 'simplecov', require: false
-gem 'capybara'
-gem 'faker'
 group :development, :test do
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  gem 'launchy'
+  gem 'pry'
+  gem 'shoulda-matchers'
+  gem 'simplecov', require: false
+  gem 'capybara'
+  gem 'faker'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 end
 
