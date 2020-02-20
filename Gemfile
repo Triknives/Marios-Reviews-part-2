@@ -2,9 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
-
-gem 'faker'
 gem 'devise'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 # Use postgresql as the database for Active Record
@@ -41,24 +40,24 @@ gem 'jquery-rails'
 
 
 group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
+  gem 'faker'
   gem 'simplecov', require: false
   gem 'capybara'
-  gem 'faker'
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 end
 
-gem 'web-console', '>= 3.3.0'
-gem 'listen', '>= 3.0.5', '< 3.2'
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring'
-gem 'spring-watcher-listen', '~> 2.0.0'
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
+  gem 'web-console', '>= 3.3.0'
+  gem 'listen', '>= 3.0.5', '< 3.2'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 
