@@ -1,19 +1,15 @@
 <h1>New Product</h1>
 <div class="form_text">
-
-<%= form_for @product do |f| %>
+  <%= form_for @product do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <div class = 'form-field'><%= f.text_field :name %></div>
   <br>
-  <br>
-  <%= f.label :country_of_origin %>
-  <%= f.text_field :country_of_origin %>
-  <br>
+  <%= f.label :country %>
+  <div class = 'form-field'><%= f.text_field :country_of_origin %></div>
   <br>
   <%= f.label :cost %>
-  <%= f.number_field :cost %>
+  <div class = 'form-field'><%= f.number_field :cost %></div>
   <br>
-  <br>
-  <%= f.submit  %>
-<% end %>
+  <div class = 'form-field'>  <%= f.submit  %> </div>
+  <% end %>
 </div>

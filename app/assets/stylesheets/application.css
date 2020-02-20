@@ -34,9 +34,18 @@ a {
   font-weight: 700;
 }
 
-.page-title {
+#page-title {
   text-align: center;
+  font-size: 3.0rem;
+  color: yellow;
+  font-weight: 700;
 }
+
+.form-field {
+  margin-left: 5px;
+}
+
+
 
 .product-list {
   margin-left: 200px;
